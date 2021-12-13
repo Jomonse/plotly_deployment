@@ -1,4 +1,5 @@
 //Deliverable 1
+
 function init() {
   // Grab a reference to the dropdown select element
   var selector = d3.select("#selDataset");
@@ -101,7 +102,7 @@ function buildCharts(sample) {
 
 //Deliverable 2
 
-// 1. Create the trace for the bubble chart.
+    // 1. Create the trace for the bubble chart.
     var bubbleData = [{
       x : ids,
       y : values,
@@ -127,9 +128,10 @@ function buildCharts(sample) {
 
     // 3. Use Plotly to plot the data with the layout.
     Plotly.newPlot("bubble", bubbleData, bubbleLayout); 
-
+ 
 //Deliverable 3
-//  1. Create a variable that filters the metadata array for the object with the desired sample number.
+
+ //  1. Create a variable that filters the metadata array for the object with the desired sample number.
  var newSamples = data.metadata;
  var sampleArray = newSamples.filter(sampleObj => sampleObj.id == sample);
 
